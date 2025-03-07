@@ -1,8 +1,8 @@
 // api/dreams/route.ts
 import { auth } from '@clerk/nextjs/server';
 import { NextResponse } from 'next/server';
-import { db } from '@/db';
-import { dreams, orders } from '@/db/schema';
+import { db } from '@/app/infrastructure/db';
+import { dreams, orders } from '@/app/infrastructure/db/schema';
 
 import { and, eq, gt } from 'drizzle-orm';
 

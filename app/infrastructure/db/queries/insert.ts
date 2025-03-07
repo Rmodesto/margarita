@@ -1,6 +1,6 @@
 import { InferInsertModel } from 'drizzle-orm';
 
-import { users, orders, dreams } from '@/db/schema';
+import { users, orders, dreams } from '@/app/infrastructure/db/schema';
 
 import { db } from '../index';
 

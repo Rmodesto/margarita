@@ -1,4 +1,4 @@
-import { db } from "@/db";
+import { db } from "@/app/infrastructure/db";
 import { sql } from "drizzle-orm";
 
 async function updateDreamsTable() {

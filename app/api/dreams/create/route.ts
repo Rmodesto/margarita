@@ -1,7 +1,7 @@
 import { auth } from '@clerk/nextjs/server';
 import { NextResponse } from 'next/server';
-import { db } from '@/db';
-import { dreams } from '@/db/schema';
+import { db } from '@/app/infrastructure/db';
+import { dreams } from '@/app/infrastructure/db/schema';
 import { Message } from 'ai';
 
 export async function POST(request: Request) {

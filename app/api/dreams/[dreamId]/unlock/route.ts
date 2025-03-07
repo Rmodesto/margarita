@@ -1,8 +1,8 @@
 // api/dreams/[dreamId]/unlock/route.ts
 import { NextResponse } from 'next/server';
 import { auth } from '@clerk/nextjs/server';
-import { db } from '@/db';
-import { dreams, orders } from '@/db/schema';
+import { db } from '@/app/infrastructure/db';
+import { dreams, orders } from '@/app/infrastructure/db/schema';
 import { and, eq, gt } from 'drizzle-orm';
 
 export async function POST(
